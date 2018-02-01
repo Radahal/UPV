@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Seminar01</string>
+    <string name="welcome">Welcome do SDM</string>
+    <string name="dynamic_int">Dynamic text assigned by code (int)</string>
+    <string name="dynamic_string">Dynamic text assigned by code (String)</string>
+    <string name="listener_code">ONCLICKLISTENER by code</string>
+    <string name="listener_layout">ONCLICKLISTENER from layout</string>
+    <string name="toast_btnCode">Button 1 clicked and Explicit Intent!</string>
+    <string name="toast_btnLayout">Button 2 clicked and Explicit Intent with extra information!</string>
+    <string name="second_welcome">Welcome to the Second Activity!</string>
+    <string name="second_welcome2">Welcome to the Second Activity, %1$s”.</string>
+</resources>
