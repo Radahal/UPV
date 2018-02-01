@@ -1,6 +1,7 @@
 package labs.sdm.seminar01;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,8 +12,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public final String TAG = "LIFECYCLE";
-
+    public static final String TAG = "LIFECYCLE";
+    private static final int INTENT_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         Button btCode = findViewById(R.id.button_ListenerByCode);
         Button btLayout = findViewById(R.id.button_ListenerFromLayout);
+        Button btImplicit = findViewById(R.id.button_implicitIntent);
+
 
         btCode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,18 +43,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btImplicit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://www.upv.es"));
+
+                Intent chooser = Intent.createChooser(intent,getResources().getString(R.string.chooser));
+
+                if(intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(chooser);
+                }
+
+            }
+        });
+
     }
 
     public void displayMessage(View v) {
         Toast.makeText(MainActivity.this,R.string.toast_btnLayout,Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
         intent.putExtra("name","Rafał");
-        startActivity(intent);
+        startActivityForResult(intent,INTENT_CODE);
 
     }
 
-
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch (requestCode) {
+            case INTENT_CODE:
+                String message = data.getStringExtra("message");
+                Toast.makeText(MainActivity.this,message, Toast.LENGTH_SHORT).show();
+                break;
+        }
+    }
 
     @Override
     protected void onStart() {

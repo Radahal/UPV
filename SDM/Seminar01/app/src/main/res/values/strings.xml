@@ -9,4 +9,6 @@
     <string name="toast_btnLayout">Button 2 clicked and Explicit Intent with extra information!</string>
     <string name="second_welcome">Welcome to the Second Activity!</string>
     <string name="second_welcome2">Welcome to the Second Activity, %1$s”.</string>
+    <string name="btn_implicitIntent">Implicit Intent</string>
+    <string name="chooser">View UPV’s Web page </string>
 </resources>
