@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activityGet_name">Losowe cytaty</string>
+    <string name="activityFavourite_name">Ulubione cytaty</string>
+    <string name="activitySettings_name">Ustawienia</string>
+    <string name="activityAbout_name">O autorze</string>
+
+    <string name="bt_dashboard_get">Losowe cytaty</string>
+    <string name="bt_dashboard_favourite">Ulubione cytaty</string>
+    <string name="bt_dashboard_settings">Ustawienia</string>
+    <string name="bt_dashboard_about">O autorze</string>
+
+    <string name="about_description">QuotationShake\nRafał Gosiewski\nrafal.gosiewski@gmail.com\n2018</string>
+
+    <string name="settings_nameLabel">Nazwa identyfikująca użytkownika</string>
+    <string name="settings_namePlaceholder">Podaj swoje imię</string>
+    <string name="settings_languageLabel">Cytaty będą otrzymywane w wybranym języku</string>
+    <string name="settings_methodLabel">Zapytanie HTTP będzie wykonane z użyciem wybranej metody</string>
+    <string name="settings_methodGET">GET</string>
+    <string name="settings_methodPOST">POST</string>
+
+    <string name="favourite_bt_label">Informacje o autorze</string>
+
+    <string name="quotation_tv_instruction">Witaj %1s!\nWciśnij Odśwież by dostać nowy cytat</string>
+    <string name="quotation_tv_sampleQuotation">To jest przykładowy cytat</string>
+    <string name="quotation_tv_sampleAuthor">To jest przykładowy autor</string>
+</resources>
