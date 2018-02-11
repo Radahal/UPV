@@ -16,13 +16,28 @@
     <string name="settings_namePlaceholder">Insert your name</string>
     <string name="settings_languageLabel">Quotations will be received in the selected language</string>
     <string name="settings_methodLabel">Web requests will be performed using the selected HTTP method</string>
-    <string name="settings_methodGET">GET</string>
-    <string name="settings_methodPOST">POST</string>
+    <string name="settings_methodGET" translatable="false">GET</string>
+    <string name="settings_methodPOST" translatable="false">POST</string>
 
     <string name="favourite_bt_label">Author info</string>
+    <string name="favourite_toast_emptyAuthor">It is not possible to get author information in that case</string>
+    <string name="favourite_ad_remove">Are you sure that you want to delete this quotation?</string>
+    <string name="favourite_ad_btnPositive">Yes</string>
+    <string name="favourite_ad_btnNegative">No</string>
 
     <string name="quotation_tv_instruction">Hello %1s!\nPress Refresh to get a new quotation</string>
     <string name="quotation_tv_sampleQuotation">This is a sample quotation</string>
     <string name="quotation_tv_sampleAuthor">This is a sample author</string>
+
+    <string name="languages_english">English</string>
+    <string name="languages_polish">Polish</string>
+    <string name="languages_spanish">Spanish</string>
+
+    <string name="menu_add">Add</string>
+    <string name="menu_rotate">Refresh</string>
+    <string name="menu_removeAll">Clear All</string>
+    <string name="menu_ad_remove">Are you sure that you want to delate ALL your favourite quotations?</string>
+    <string name="menu_ad_btnPositive">Yes</string>
+    <string name="menu_ad_btnNegative">Cancel</string>
 
 </resources>

@@ -20,17 +20,31 @@
         </activity>
         <activity
             android:name=".AboutActivity"
-            android:label="@string/activityAbout_name" />
+            android:parentActivityName=".DashboardActivity"
+            android:label="@string/activityAbout_name">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
+        </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/activitySettings_name" />
+            android:parentActivityName=".DashboardActivity"
+            android:label="@string/activitySettings_name">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
+        </activity>
         <activity
             android:name=".FavouriteActivity"
-            android:label="@string/activityFavourite_name"></activity>
+            android:parentActivityName=".DashboardActivity"
+            android:label="@string/activityFavourite_name">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
+        </activity>
         <activity
             android:name=".QuotationActivity"
+            android:parentActivityName=".DashboardActivity"
             android:label="@string/activityGet_name">
-
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
         </activity>
     </application>
 

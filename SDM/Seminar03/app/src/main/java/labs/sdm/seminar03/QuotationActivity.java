@@ -2,11 +2,14 @@ package labs.sdm.seminar03;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 public class QuotationActivity extends AppCompatActivity {
+
+    private TextView tvQuotation;
+    private TextView tvAuthor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,10 +17,8 @@ public class QuotationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_quotation);
 
         // set references to views
-        final TextView tvQuotation = findViewById(R.id.quotation_tv_quotation);
-        final TextView tvAuthor = findViewById(R.id.quotation_tv_author);
-        ImageButton ibRefresh = findViewById(R.id.quotation_ib_refresh);
-
+         tvQuotation = findViewById(R.id.quotation_tv_quotation);
+         tvAuthor = findViewById(R.id.quotation_tv_author);
 
         // getData from intent
         String username = getIntent().getStringExtra("username");
@@ -25,13 +26,27 @@ public class QuotationActivity extends AppCompatActivity {
         // set value of views
         tvQuotation.setText( getString(R.string.quotation_tv_instruction,username) );
 
-        // set listeners and actions
-        ibRefresh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_quotations, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
+            case R.id.menu_add:
+                return true;
+
+            case R.id.menu_rotate:
                 tvQuotation.setText(R.string.quotation_tv_sampleQuotation);
                 tvAuthor.setText(R.string.quotation_tv_sampleAuthor);
-            }
-        });
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

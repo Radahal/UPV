@@ -16,12 +16,13 @@
     <string name="settings_namePlaceholder">Inserta tu nombre</string>
     <string name="settings_languageLabel">Las citas se recibirán en el idioma seleccionado</string>
     <string name="settings_methodLabel">Las solicitudes web se realizarán utilizando el método HTTP seleccionado</string>
-    <string name="settings_methodGET">GET</string>
-    <string name="settings_methodPOST">POST</string>
 
     <string name="favourite_bt_label">Acerca del autor</string>
 
     <string name="quotation_tv_instruction">Hola% 1s!\nPresione Actualizar para obtener una nueva cita</string>
     <string name="quotation_tv_sampleQuotation">Esta es una cita de muestra</string>
     <string name="quotation_tv_sampleAuthor">Esta es una autor de muestra</string>
+    <string name="languages_english">Ingles</string>
+    <string name="languages_polish">Polaco</string>
+    <string name="languages_spanish">Español</string>
 </resources>
