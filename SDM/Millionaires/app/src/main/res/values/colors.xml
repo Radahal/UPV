@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main style -->
+    <color name="colorPrimary">#3F51B5</color>
+   <!-- <color name="colorPrimaryDark">#303F9F</color> -->
+    <color name="colorPrimaryDark">#090049</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMainBlue">#10026C</color>
+    <color name="colorMainDarkblue">#090049</color>
+
+
+    <!-- login form -->
+    <color name="colorBackground">#AAFFFFFF</color>
+
+
+
+    <!-- general -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <!--  button -->
+    <color name="btnBackground">#361053</color>
+    <color name="btnBorder">#a49fc9</color>
+    <color name="btnAnswerLetter">#f4942e</color>
+    <color name="btnAnswerText">#FFFFFF</color>
+
+    <!-- btn states -->
+    <color name="btnActiveReward">#f4942e</color>
+    <color name="btnGuaranteeReward">#f4942e</color>
+    <color name="btnCorrectAnswer">#4BC94A</color>
+    <color name="btnCheckedAnswer">#f4942e</color>
+</resources>

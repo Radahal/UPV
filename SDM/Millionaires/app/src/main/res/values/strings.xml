@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name" translatable="false">Millionaires</string>
+
+    <string name="login_tv_infoNoUser">No user with inserted username.</string>
+    <string name="login_tv_infoUserName">Username can not be empty.</string>
+    <string name="login_tv_infoIncorrectPassword">Incorrect password. Try again.</string>
+    <string name="login_tv_infoEmpty">Put your username and password below.</string>
+    <string name="login_btn_login">Login</string>
+    <string name="login_tv_signUp">Don\'t have account yet? Sign up!</string>
+    <string name="login_tv_username">Username</string>
+    <string name="login_tv_pwd">Password</string>
+    <string name="login_cb_label">Remember me</string>
+
+
+    <string name="menu_btn_play">Play</string>
+    <string name="menu_btn_continue">Continue</string>
+    <string name="menu_btn_friends">Friends</string>
+    <string name="menu_btn_scores">Scores</string>
+    <string name="menu_btn_settings">Settings</string>
+    <string name="menu_btn_credits">Credits</string>
+    <string name="menu_btn_logout">Exit</string>
+
+    <string name="game_drawer_open">Open</string>
+    <string name="game_drawer_close">Close</string>
+
+    <string name="help_call">Call to friends</string>
+    <string name="help_stage">Ask to audience</string>
+    <string name="help_percent">Fifty-fifty</string>
+
+    <string name="game_break">Give up</string>
+
+
+    <string name="credits_author_description" translatable="false">Rafał Gosiewski</string>
+    <string name="credits_reason_description">Project has been created during Erasmus studies at UPV during course SDM</string>
+    <string name="credits_resources_description">All resources (images, logo) has been used based on CC licence with rights to use in non-commercial projects.</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="add_newFriend">Add new friend</string>
+    <string name="remove_all">Remove all</string>
+
+
+    <string name="score_tab_local">Local</string>
+    <string name="score_tab_global">Friends</string>
+
+    <string name="no_internet">Your device has no access to internet.</string>
+
+    <string name="label_menu" translatable="false">Menu</string>
+    <string name="label_play">Play</string>
+    <string name="label_credits">Credits</string>
+    <string name="label_friends">Friends</string>
+    <string name="label_scores">Scores</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/menu_game_call"
+            android:icon="@drawable/help_call_white"
+            android:title="@string/help_call"
+            app:showAsAction="always"/>
+
+
+        <item
+            android:id="@+id/menu_game_stage"
+            android:icon="@drawable/help_stage_white"
+            android:title="@string/help_stage"
+            app:showAsAction="always"/>
+
+
+        <item
+            android:id="@+id/menu_game_percent"
+            android:icon="@drawable/help_percent_white"
+            android:title="@string/help_percent"
+            app:showAsAction="always"/>
+
+</menu>
